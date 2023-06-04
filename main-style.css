@@ -1,33 +1,81 @@
-*{
-	/* margin: 0;
-	padding: 0; */
-	font-family: "Trebuchet MS", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
 }
 
-header, footer {
-	background: rgb(0,120,191);
-	color: white;
+h1{
+	font-family: 'Rubik Iso', cursive;
+
 }
 
-ul {
-	/* padding: 25px; */
-	background: rgb(62,183,255);
-	color:black;
+body {
+	background-color: #000;
+}
+.container{
+	width:768px;
+	margin: 0 auto;
+}
+.page-header,
+.page-footer{
+	background: #8aea92;
+	color: #33202a;
+}
+
+.accent{
+	color:#5f5566;
+}
+
+.product{
+	position:relative;
+	padding: 20px;
+	padding-left: 220px; 
+	min-height: 120px;
+	background-color:#fff;
+	border-radius: 15px;
+	list-style: none;
 }
 li{
-	list-style: none;
-	padding: 10px 10px 10px 25px;
-	background: white;	
-	position:relative;
 	
 }
-li:before{
-	display: block;
-	content: "";
-	position: absolute;
-	top:0;
-	left:0;
-	width: 2px;
-	height: 100%;
-	background: blue;
+.products-list{
+	padding: 10px 20px;
 }
+.product > h2{
+	color: #80ada0;
+}
+h2:before{
+	display: block;
+	position: absolute;
+	left: 20px;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+.product-1 > h2:before{
+	content:url('1.jpg');
+}
+.product-2 > h2:before{
+	content:url('2.jpg');
+}
+.product-3 > h2:before{
+	content:url('3.jpg');
+}
+.product-4 > h2:before{
+	content:url('4.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
